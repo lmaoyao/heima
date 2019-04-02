@@ -24,6 +24,7 @@
            flex: 4;
            text-decoration: none;
            background: orange;
+           color: black;
        }
     }
 </style>
