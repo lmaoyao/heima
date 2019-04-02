@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="app-container">
+    <Header fixed title="我的商城"></Header>
+    <div>
+      123
+    </div>
+    <tab></tab>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//按需导入mint-ui组建
+import { Header } from 'mint-ui';
+import  Tab from "./components/tab"
 
 export default {
+
   name: 'app',
   components: {
-    HelloWorld
+      Header,
+      Tab
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.app-container{
+  padding-top: 40px;
 }
 </style>
